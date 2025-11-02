@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deepakpuri G — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --accent: #3b82f6;
+      --accent2: #9333ea;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --card: #111418;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Poppins', sans-serif; }
+
+    header {
+      position: fixed; width: 100%; top: 0; left: 0; background: rgba(17,20,24,0.85); backdrop-filter: blur(10px);
+      display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    header h1 { font-weight: 700; font-size: 20px; letter-spacing: 1px; }
+    nav a { color: var(--muted); margin: 0 12px; font-weight: 500; text-decoration: none; transition: .3s; }
+    nav a:hover { color: var(--accent); }
+    .btn {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff; padding: 8px 18px; border-radius: var(--radius); font-weight: 600; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(59,130,246,0.3); transition: 0.3s;
+    }
+    .btn:hover { box-shadow: 0 4px 28px rgba(59,130,246,0.5); transform: translateY(-2px); }
+
+    main { padding: 120px 60px 60px; max-width: 1100px; margin: auto; }
+
+    /* Hero */
+    .hero { text-align: center; margin-bottom: 80px; }
+    .hero h2 { font-size: 36px; background: linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 12px; }
+    .hero p { color: var(--muted); font-size: 16px; max-width: 700px; margin: 0 auto 20px; }
+    .socials { display: flex; justify-content: center; gap: 14px; margin-top: 16px; }
+    .socials a { color: var(--accent); text-decoration: none; border: 1px solid rgba(59,130,246,0.3); padding: 8px 12px; border-radius: 8px; }
+    .socials a:hover { background: var(--accent); color: #fff; }
+
+    /* Section */
+    section { margin-bottom: 80px; }
+    section h3 { font-size: 22px; margin-bottom: 20px; color: var(--accent); }
+
+    /* Skills */
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: var(--card); border: 1px solid rgba(255,255,255,0.05); padding: 8px 14px; border-radius: 10px; color: var(--muted); font-weight: 500; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 20px; }
+    .project { background: var(--card); padding: 20px; border-radius: var(--radius); transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
+    .project:hover { transform: translateY(-5px); box-shadow: 0 6px 20px rgba(59,130,246,0.2); }
+    .project h4 { margin-bottom: 6px; }
+    .project ul { margin-left: 18px; color: var(--muted); font-size: 14px; }
+
+    /* Lists */
+    .list-item { margin-bottom: 8px; color: var(--muted); }
+
+    footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 60px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px; }
+
+    @media (max-width:700px){ header{padding:14px 20px;} main{padding:100px 20px;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DEEPAKPURI G</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="DEEPAKPURI_RESUME(RA2211026050110).pdf" download class="btn">Download Resume</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Hi, I'm DEEPAKPURI</h2>
+      <p>Frontend Developer & AI Enthusiast passionate about building responsive web apps, intelligent systems, and innovative tech experiences.</p>
+      <div class="socials">
+        <a href="https://github.com/DEEPAKPURI-G" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEyCuprx3zBuwAAAZo0-yKoTIhXzhb_Ol0-fOVUac_hfKAAfqjrzwouQaZjg9MomHyXtw-p4_5-D8m9grDvaO8119yah9c4mRmqGC7db-giENLxLTawspQWA9jQkaKhe5aq6Mc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdeepak-puri-a6a1a7251%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" target="_blank">LinkedIn</a>
+        <a href="mailto:dg0413@srmist.edu.in">Email</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h3>About Me</h3>
+      <p>Passionate Computer Science student specializing in Artificial Intelligence and Full-Stack Development. Skilled in creating responsive web applications and intelligent systems with a focus on performance and user experience. Eager to apply innovative solutions and continuous learning in real-world software projects.</p>
+    </section>
+
+    <section id="skills">
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill">C/C++</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React.js</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Python</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Docker</div>
+        <div class="skill">Git/GitHub</div>
+        <div class="skill">Tailwind CSS</div>
+        <div class="skill">VS Code</div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <h4>🌦️ React Weather App</h4>
+          <ul>
+            <li>Developed a real-time weather app using React.js and WeatherAPI.</li>
+            <li>Implemented live city search, responsive UI, and error handling.</li>
+            <li>Built lightweight, fast frontend with Vite.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4>📝 Flask Todo App (Light Theme)</h4>
+          <ul>
+            <li>Secure Todo app with authentication and hashed passwords.</li>
+            <li>Modern light-themed UI using Jinja2 templates.</li>
+            <li>Persistent SQLite storage for private tasks.</li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <h4>🔥 Calories Burnt Prediction</h4>
+          <ul>
+            <li>Machine learning model to predict calories burnt during workouts.</li>
+            <li>Integrated API and containerized with Docker for scalability.</li>
+            <li>Optimized data handling and testing performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h3>Education</h3>
+      <div class="list-item"><strong>SRMIST – Irungalur, Trichy:</strong> B.Tech in CSE (AI & ML), CGPA: 7.7/10</div>
+      <div class="list-item"><strong>Bharani Park Matric Hr. Sec. School:</strong> Class XII (2022) – 75%</div>
+      <div class="list-item"><strong>Cheran Matric High School:</strong> Class X (2020) – 65%</div>
+    </section>
+
+    <section id="certificates">
+      <h3>Certificates</h3>
+      <ul>
+        <li>Web Development Training – Internshala (8 weeks). Score: 71%.</li>
+        <li>IoT using Python & Raspberry Pi Workshop – IIT Madras Research Park (2023).</li>
+        <li>C Language Course – Leaf Computer Education. Grade A.</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <h3>Hobbies</h3>
+      <p>Drawing · Gaming</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:dg0413@srmist.edu.in">dg0413@srmist.edu.in</a></p>
+      <p>Phone: <a href="tel:+919944450700">+91 9944450700</a></p>
+      <p>Location: India</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Deepakpuri G — Built with 💙 using HTML, CSS, and JavaScript</p>
+    </footer>
+  </main>
+</body>
+</html>
